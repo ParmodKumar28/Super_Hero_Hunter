@@ -15,7 +15,7 @@ A web application that allows users to search for their favorite superheroes and
 
 ## Introduction
 
-Super Hero Hunter is a web application developed using vanilla JavaScript. It leverages the Marvel API to fetch information about superheroes. Users can see hame page with Superheroes and can search for superheroes, view detailed information about them, and add them to their list of favorite superheroes.
+Super Hero Hunter is a web application developed using vanilla JavaScript. It leverages the Marvel API to fetch information about superheroes. Users can see home page with Superheroes and can search for superheroes, view detailed information about them, and add them to their list of favorite superheroes.
 
 ## Features
 - Home page shows Superheroes cards.
