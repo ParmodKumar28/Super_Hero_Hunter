@@ -1,6 +1,5 @@
 # Super_Hero_Hunter
 This is a project on Superhero Hunter on Marvel API
-# Super Hero Hunter
 
 A web application that allows users to search for their favorite superheroes and add them to their list of favorites. This project uses the Marvel API to fetch superhero data.
 
