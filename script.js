@@ -155,19 +155,8 @@ initializeCharacterPage();
 function addToFavorites(id, name, image) {
   let existing = JSON.parse(localStorage.getItem('favoriteSuperheroes')) || {};
 
-  // Checking if the superhero is already in favorites
-  if (existing[id]) {
-    // Remove the superhero from favorites
-    delete existing[id];
-
-    // Change the heart icon color to white
-    const heartIcon = document.getElementById(`heartIcon${id}`);
-    if (heartIcon) {
-      heartIcon.classList.remove('text-danger');
-    }
-
-    alert(`${name} is removed from your favorites!`);
-  } else {
+  // If the superhero is not in favorites, add it
+  if (!existing[id]) {
     existing[id] = { name: name, image: image };
 
     // Save back to localStorage
@@ -181,8 +170,16 @@ function addToFavorites(id, name, image) {
 
     // Display a notification that the superhero is added to favorites
     alert(`${name} is added to your favorites!`);
+  } else {
+    // If the superhero is already in favorites, display a message
+    alert(`${name} is already in your favorites!`);
   }
+
+  // Refresh the favorites display after adding a superhero
+  displayFavorites();
 }
+
+
 
 
 
